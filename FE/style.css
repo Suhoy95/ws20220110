@@ -30,3 +30,66 @@ body {
 header, footer {
     text-align: center;
 }
+
+.auth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.auth__form {
+    position: relative;
+    display: block;
+    width: 256px;
+    height: 256px;
+    background-color: white;
+    border: thistle solid 3px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.auth__form input,
+.auth__form button {
+    display: block;
+    margin: 5px auto 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.auth__form button {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.auth__form .auth__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.auth__preview img,
+.auth__preview figcaption {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0;
+}
+
+
+
+.auth__form .auth__preview img {
+    height: 50px;
+}
