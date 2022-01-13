@@ -10,3 +10,15 @@ mkdir backend && cd backend && \
   pip freeze > requirements.txt && \
   git add . && git commit -m "Django-project has been created"
 ```
+
+```json
+{
+    "name": "Мега-рогалик",
+    "map": [
+        {
+            "img-source": "url-картинки",
+            "name": "Название карты"
+        }
+    ]
+}
+```
