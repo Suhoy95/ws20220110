@@ -31,7 +31,8 @@ header, footer {
     text-align: center;
 }
 
-.auth {
+.auth,
+.pause-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -92,4 +93,110 @@ header, footer {
 
 .auth__form .auth__preview img {
     height: 50px;
+}
+
+.game-field {
+    height: 80vh;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.game-status {
+    position: relative;
+}
+
+.game-status ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-status__name,
+.game-status__gametime,
+.game-status__passedtime,
+.game-status__lives {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.game-status__name {
+    background-color: rgba(255,0, 0, 0.5);
+}
+
+.game-status__gametime {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.game-status__passedtime {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: purple;
+}
+
+.game-status__lives {
+    background-color: rgba(0, 255, 0, 0.5);
+    color: red;
+    font-size: 2.5em;
+}
+
+.game-field {
+    background-image: url("img/map-3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 20%;
+    margin-bottom: 1em;
+}
+
+.pause-screen {
+    display: none;
+}
+
+.pause-screen__message {
+    background-color: white;
+    padding: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.player,
+.monster,
+.trap {
+    position: absolute;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px dashed;
+    border-radius: 50%;
+}
+
+.player {
+    left: 10px;
+    top: 50%;
+    padding: 5px;
+    background-color: turquoise;
+}
+
+.monster {
+    left: 100px;
+    top: 50%;
+    padding: 5px;
+    background-color: green;
+    color: greenyellow;
+}
+
+.trap {
+    left: 200px;
+    top: 50%;
+    padding: 40px;
+
+    background-color: salmon;
+    color: red;
 }
